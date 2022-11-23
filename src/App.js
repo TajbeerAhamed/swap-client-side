@@ -1,13 +1,39 @@
-import logo from './logo.svg';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import Blog from './components/Blog/Blog';
+import Home from './components/Home/Home';
+import Login from './components/Login/Login';
+import Signup from './components/Signup/Signup';
+import Main from './layout/Main';
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path:'/',
+      element:<Main></Main>,
+      children: [
+        {
+          path:'/',
+          element:<Home></Home>
+        },
+        {
+          path:'/blog',
+          element:<Blog></Blog>
+        },
+        {
+          path:'/login',
+          element:<Login></Login>
+        },
+        {
+          path:'/signup',
+          element:<Signup></Signup>
+        },
+      ]
+    }
+  ])
   return (
     <div>
-     <button className="btn btn-info">Info</button>
-<button className="btn btn-success">Success</button>
-<button className="btn btn-warning">Warning</button>
-<button className="btn btn-error">Error</button>
+    <RouterProvider router={router}></RouterProvider>
     </div>
   );
 }
