@@ -48,7 +48,7 @@ const Footer = () => {
                     href="/"
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
-                    News
+                    Iphone
                   </a>
                 </li>
                 <li>
@@ -56,7 +56,7 @@ const Footer = () => {
                     href="/"
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
-                    World
+                   OnePlus
                   </a>
                 </li>
                 <li>
@@ -64,7 +64,7 @@ const Footer = () => {
                     href="/"
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
-                    Games
+                   Samsung
                   </a>
                 </li>
                 <li>
@@ -72,14 +72,14 @@ const Footer = () => {
                     href="/"
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
-                    References
+                    Vivo
                   </a>
                 </li>
               </ul>
             </div>
             <div>
               <p className="font-semibold tracking-wide text-teal-accent-400">
-                Cherry
+                Useful Links
               </p>
               <ul className="mt-2 space-y-2">
                 <li>
@@ -119,12 +119,12 @@ const Footer = () => {
                     href="/"
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
-                    Portfolio
+                   Blog
                   </a>
                 </li>
               </ul>
             </div>
-            <div>
+            {/* <div>
               <p className="font-semibold tracking-wide text-teal-accent-400">
                 Apples
               </p>
@@ -209,11 +209,51 @@ const Footer = () => {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
+            <div className="space-y-2 text-sm">
+          <p className="text-base font-bold tracking-wide text-gray-900">
+            Contacts
+          </p>
+          <div className="flex">
+            <p className="mr-1 text-gray-800">Phone:</p>
+            <a
+              href="tel:850-123-5021"
+              aria-label="Our phone"
+              title="Our phone"
+              className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
+            >
+             +8801998987866
+            </a>
+          </div>
+          <div className="flex">
+            <p className="mr-1 text-gray-800">Email:</p>
+            <a
+              href="mailto:info@lorem.mail"
+              aria-label="Our email"
+              title="Our email"
+              className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
+            >
+             mdtajbeerahamedrimon@gmail.com
+            </a>
+          </div>
+          <div className="flex">
+            <p className="mr-1 text-gray-800">Address:</p>
+            <a
+              href="https://www.google.com/maps"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Our address"
+              title="Our address"
+              className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
+            >
+              Dhaka,Bangladesh
+            </a>
+          </div>
+        </div>
           </div>
         </div>
         <div className="flex flex-col justify-between pt-5 pb-10 border-t border-deep-purple-accent-200 sm:flex-row">
-          <p className="text-sm text-red-600 text-bold">
+          <p className="text-sm text-white text-bold">
             © Copyright 2022 Tajbeer. All rights reserved.
           </p>
           <div className="flex items-center mt-4 space-x-4 sm:mt-0">
