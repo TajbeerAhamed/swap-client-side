@@ -30,7 +30,22 @@ Example In the given example, there are two objects person and GFGuser. The obje
 <br />
 We Should write unit tests because They enable you to catch bugs early in the development process. Automated unit tests help a great deal with regression testing. They detect code smells in your codebase. For example, if you are having a hard time writing unit tests for a piece of code, it might be a sign that your function is too complex.</p>
 			</div>
-			
+			<div className="py-6 space-y-2 md:grid md:grid-cols-12 md:gap-8 md:space-y-0">
+				<h3 className="font-semibold md:col-span-5">React vs. Angular vs. Vue?</h3>
+				<p className="md:pl-0 md:col-span-7">React - React is the JavaScript library of User Interfaces. It is build single-page applications and also allows you to create reusable UI components. It is a front-end JavaScript framework, created by Facebook in 2011.
+React has gained a lot of popularity in recent years and is considered one of the best frameworks for web development. There are more developers who keep React as a priority for creating wonderful websites.
+<br />
+<hr />
+
+Angular - It's developed by Google, was released in the year 2010. It is a TypeScript-based framework that uses a regular DOM. Angular provides a set of tools using which a complex, reactive UI can be built.
+Angular is used by Google, Up work, and MS Office and since this framework was implemented before React, it is more popular providing a highly functional framework to create larger applications.
+
+<br />
+<hr />
+
+Vue - Vue was developed by a former Google employee and was released in the year 2014. It was developed to make the best version of Angular and make a custom tool.
+Vue has become so popular these days and it is one of the hottest topics in terms of technology. Companies that use Vue as their front-end development framework are UpWork, Netflix, and Nintendo. It has a good rating on GitHub making it so popular.</p>
+			</div>
 		</div>
 	</div>
 </section>
