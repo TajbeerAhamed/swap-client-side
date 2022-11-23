@@ -5,8 +5,10 @@ import HomeDetails from '../HomeDetails/HomeDetails';
 
 const Home = () => {
     return (
-        // <HomeBanner></HomeBanner>
+        <div>
+             <HomeBanner></HomeBanner>
        <HomeDetails></HomeDetails>
+        </div>
 
     );
 };
