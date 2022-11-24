@@ -51,25 +51,23 @@ const HomeDetails = () => {
             </svg>
           </div>
           <div className="max-w-xl mb-6">
-            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-              Let us Help
+            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-red-600 sm:text-4xl sm:leading-none">
+              Welcome to the Largest 
               <br className="hidden md:block" />
-              you to sell your{' '}
+              resell market of{' '}
               <span className="inline-block text-deep-purple-accent-400">
                old Phones
               </span>
             </h2>
-            <p className="text-base text-gray-700 md:text-lg">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae. explicabo.
+            <p className="text-base text-red-500 md:text-lg">
+             You can Buy and Sell your old Phones Here...
             </p>
           </div>
           <div>
             <a
               href="/"
               aria-label=""
-              className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+              className="inline-flex items-center font-semibold transition-colors duration-200 text-red-400 hover:text-red-600"
             >
               Learn more
               <svg
