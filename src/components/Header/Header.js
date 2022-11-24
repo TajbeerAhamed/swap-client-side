@@ -188,34 +188,34 @@ const Header = () => {
                   <nav>
                     <ul class="space-y-4">
                       <li>
-                        <a
-                          href="/"
+                        <Link to={'/allProduct'}
+                         
                           aria-label="Our product"
                           title="Our product"
                           class="font-medium tracking-wide text-red-600 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
-                          Product
-                        </a>
+                       All Product
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/"
+                        <Link
+                          
                           aria-label="Our product"
                           title="Our product"
                           class="font-medium tracking-wide text-red-600 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           Features
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/"
+                        <Link
+                         
                           aria-label="Product pricing"
                           title="Product pricing"
                           class="font-medium tracking-wide text-red-600 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           Pricing
-                        </a>
+                        </Link>
                       </li>
                       <li>
                         <Link to={'/blog'}
@@ -228,24 +228,24 @@ const Header = () => {
                         </Link>
                       </li>
                       <li>
-                        <a
-                          href="/"
+                        <Link to={'/login'}
+                          
                           aria-label="Sign in"
                           title="Sign in"
                           class="font-medium tracking-wide text-red-600 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
-                          Sign in
-                        </a>
+                        Login
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/"
+                        <Link
+                        to={'/signup'}
                           class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-red-600 transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                           aria-label="Sign up"
                           title="Sign up"
                         >
-                          Sign up
-                        </a>
+                          Signup
+                        </Link>
                       </li>
                     </ul>
                   </nav>

@@ -34,7 +34,8 @@ function App() {
         },
         {
           path:'/allPhones',
-          element:<AllPhones></AllPhones>
+          element:<AllPhones></AllPhones>,
+          loader: () => fetch('http://localhost:5000/allPhones')
         },
       ]
     },
