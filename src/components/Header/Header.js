@@ -88,24 +88,24 @@ const Header = () => {
           </div>
           <ul class="flex items-center hidden space-x-8 lg:flex">
             <li>
-              <a
-                href="/"
+              <Link to={'/login'}
+               
                 aria-label="Sign in"
                 title="Sign in"
                 class="font-medium tracking-wide text-red-600 transition-colors duration-200 hover:text-teal-accent-400"
               >
-                Sign in
-              </a>
+               Login
+              </Link>
             </li>
             <li>
-              <a
-                href="/"
+              <Link to={'signup'}
+               
                 class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-red-600 transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                 aria-label="Sign up"
                 title="Sign up"
               >
-                Sign up
-              </a>
+                Signup
+              </Link>
             </li>
           </ul>
           <div class="lg:hidden">
