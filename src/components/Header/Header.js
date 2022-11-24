@@ -56,24 +56,24 @@ const Header = () => {
                 </a>
               </li>
               <li>
-                <a
-                  href="/"
+                <Link to={'/allPhones'}
+                 
                   aria-label="Our product"
                   title="Our product"
                   class="font-medium tracking-wide text-red-600 transition-colors duration-200 hover:text-teal-accent-400"
                 >
-                  Features
-                </a>
+                  All Products
+                </Link>
               </li>
               <li>
-                <a
-                  href="/"
+                <Link
+                 
                   aria-label="Product pricing"
                   title="Product pricing"
                   class="font-medium tracking-wide text-red-600 transition-colors duration-200 hover:text-teal-accent-400"
                 >
                   Pricing
-                </a>
+                </Link>
               </li>
               <li>
                 <Link to={'/blog'}

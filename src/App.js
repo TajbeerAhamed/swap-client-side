@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import AllPhones from './components/AllPhones/AllPhones';
 import Blog from './components/Blog/Blog';
 import Error from './components/Error/Error';
 import Home from './components/Home/Home';
@@ -30,6 +31,10 @@ function App() {
         {
           path:'/signup',
           element:<Signup></Signup>
+        },
+        {
+          path:'/allPhones',
+          element:<AllPhones></AllPhones>
         },
       ]
     },

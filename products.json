@@ -1,15 +1,136 @@
 [
     {
         "picture": "https://images.unsplash.com/photo-1569422586959-a95e5b2b934a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGFwcGxlJTIwcGhvbmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-        "brand": "Apple"
-    },
+        "brand": "Apple",
+         "model": "Iphone 11 Pro Max",
+        "location": "Katabon,Dhaka",
+        "original price": "95000",
+        "resale price": "65000",
+        "years of use": "10 months",
+        "posted time": "24 November,2022",
+        "seller's name": "Ifat Rahman Ariyan"
+      },
+    
     {
         "picture": "https://images.unsplash.com/photo-1580521923679-6d275830d039?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG9uZXBsdXMlMjBtb2JpbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-        "brand": "OnePlus"
+        "brand": "OnePlus",
+         "model": "Iphone 11 Pro Max",
+        "location": "Katabon,Dhaka",
+        "original price": "95000",
+        "resale price": "65000",
+        "years of use": "10 months",
+        "posted time": "24 November,2022",
+        "seller's name": "Ifat Rahman Ariyan"
     },
     {
         "picture": "https://images.unsplash.com/photo-1618478594486-c65b899c4936?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHNhbXN1bmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-        "brand": "Samsung"
+        "brand": "Samsung",
+        "model": "Iphone 11 Pro Max",
+        "location": "Katabon,Dhaka",
+        "original price": "95000",
+        "resale price": "65000",
+        "years of use": "10 months",
+        "posted time": "24 November,2022",
+        "seller's name": "Ifat Rahman Ariyan"
+    },
+    {
+        "picture": "https://images.unsplash.com/photo-1618478594486-c65b899c4936?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHNhbXN1bmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "brand": "Samsung",
+        "model": "Iphone 11 Pro Max",
+        "location": "Katabon,Dhaka",
+        "original price": "95000",
+        "resale price": "65000",
+        "years of use": "10 months",
+        "posted time": "24 November,2022",
+        "seller's name": "Ifat Rahman Ariyan"
+    },
+    {
+        "picture": "https://images.unsplash.com/photo-1618478594486-c65b899c4936?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHNhbXN1bmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "brand": "Samsung",
+        "model": "Iphone 11 Pro Max",
+        "location": "Katabon,Dhaka",
+        "original price": "95000",
+        "resale price": "65000",
+        "years of use": "10 months",
+        "posted time": "24 November,2022",
+        "seller's name": "Ifat Rahman Ariyan"
+    },
+    {
+        "picture": "https://images.unsplash.com/photo-1618478594486-c65b899c4936?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHNhbXN1bmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "brand": "Samsung",
+        "model": "Iphone 11 Pro Max",
+        "location": "Katabon,Dhaka",
+        "original price": "95000",
+        "resale price": "65000",
+        "years of use": "10 months",
+        "posted time": "24 November,2022",
+        "seller's name": "Ifat Rahman Ariyan"
+    },
+    {
+        "picture": "https://images.unsplash.com/photo-1618478594486-c65b899c4936?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHNhbXN1bmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "brand": "Samsung",
+        "model": "Iphone 11 Pro Max",
+        "location": "Katabon,Dhaka",
+        "original price": "95000",
+        "resale price": "65000",
+        "years of use": "10 months",
+        "posted time": "24 November,2022",
+        "seller's name": "Ifat Rahman Ariyan"
+    },
+    {
+        "picture": "https://images.unsplash.com/photo-1618478594486-c65b899c4936?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHNhbXN1bmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "brand": "Samsung",
+        "model": "Iphone 11 Pro Max",
+        "location": "Katabon,Dhaka",
+        "original price": "95000",
+        "resale price": "65000",
+        "years of use": "10 months",
+        "posted time": "24 November,2022",
+        "seller's name": "Ifat Rahman Ariyan"
+    },
+    {
+        "picture": "https://images.unsplash.com/photo-1618478594486-c65b899c4936?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHNhbXN1bmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "brand": "Samsung",
+        "model": "Iphone 11 Pro Max",
+        "location": "Katabon,Dhaka",
+        "original price": "95000",
+        "resale price": "65000",
+        "years of use": "10 months",
+        "posted time": "24 November,2022",
+        "seller's name": "Ifat Rahman Ariyan"
+    },
+    {
+        "picture": "https://images.unsplash.com/photo-1618478594486-c65b899c4936?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHNhbXN1bmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "brand": "Samsung",
+        "model": "Iphone 11 Pro Max",
+        "location": "Katabon,Dhaka",
+        "original price": "95000",
+        "resale price": "65000",
+        "years of use": "10 months",
+        "posted time": "24 November,2022",
+        "seller's name": "Ifat Rahman Ariyan"
+    },
+    {
+        "picture": "https://images.unsplash.com/photo-1618478594486-c65b899c4936?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHNhbXN1bmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "brand": "Samsung",
+        "model": "Iphone 11 Pro Max",
+        "location": "Katabon,Dhaka",
+        "original price": "95000",
+        "resale price": "65000",
+        "years of use": "10 months",
+        "posted time": "24 November,2022",
+        "seller's name": "Ifat Rahman Ariyan"
+    },
+    {
+        "picture": "https://images.unsplash.com/photo-1618478594486-c65b899c4936?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHNhbXN1bmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "brand": "Samsung",
+        "model": "Iphone 11 Pro Max",
+        "location": "Katabon,Dhaka",
+        "original price": "95000",
+        "resale price": "65000",
+        "years of use": "10 months",
+        "posted time": "24 November,2022",
+        "seller's name": "Ifat Rahman Ariyan"
     }
 
 ]
