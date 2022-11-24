@@ -55,8 +55,11 @@ const HomeDetails = () => {
               Welcome to the Largest 
               <br className="hidden md:block" />
               resell market of{' '}
-              <span className="inline-block text-deep-purple-accent-400">
+              <span className="inline-block text-black">
                old Phones
+              </span>
+              <span className="inline-block text-black">
+              Swap
               </span>
             </h2>
             <p className="text-base text-red-500 md:text-lg">
