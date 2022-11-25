@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useLoaderData, useNavigate } from 'react-router-dom';
+import CustomerReview from '../CustomerReview/CustomerReview';
 import HomeBanner from '../HomeBanner/HomeBanner';
 import HomeDetails from '../HomeDetails/HomeDetails';
 import HomePhones from '../HomePhones/HomePhones';
@@ -15,6 +16,7 @@ const Home = () => {
         <div>
              <HomeBanner></HomeBanner>
        <HomeDetails></HomeDetails>
+       <h1 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-red-600 sm:text-4xl sm:leading-none text-center">Categories of Phone</h1>
 <div className='grid sm:grid-cols-3 gap-3 ml-10 sm:mt-10 mt-10 mb-20'>
 {
     phones.map(phone =><HomePhones
@@ -32,6 +34,7 @@ const Home = () => {
                     </button>
                 </Link>
 </div>
+<CustomerReview></CustomerReview>
         </div>
 
     );
