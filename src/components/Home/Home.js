@@ -14,8 +14,9 @@ const Home = () => {
     const phones = useLoaderData()
     return (
         <div>
+             <HomeDetails></HomeDetails>
              <HomeBanner></HomeBanner>
-       <HomeDetails></HomeDetails>
+      
        <h1 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-red-600 sm:text-4xl sm:leading-none text-center">Categories of Phone</h1>
 <div className='grid sm:grid-cols-3 gap-3 ml-10 sm:mt-10 mt-10 mb-20'>
 {

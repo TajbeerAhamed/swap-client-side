@@ -76,6 +76,7 @@ const CustomerReview = () => {
 		</div>
 	</div>
 </div>
+
         </div>
     );
 };

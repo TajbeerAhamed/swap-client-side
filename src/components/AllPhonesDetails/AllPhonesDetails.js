@@ -1,7 +1,10 @@
-import React from 'react';
+import OrderModal from "../OrderModal/OrderModal";
+
 
 const AllPhonesDetails = ({allPhone}) => {
-    const {picture,brand,model,location,original_price,resale_price,years_of_use,posted_time,sellers_name} = allPhone
+    const {picture,brand,model,location,original_price,resale_price,years_of_use,posted_time,sellers_name,_id} = allPhone
+   
+  
     return (
         <div className="card lg:card-side bg-base-100 mr-10 mt-10 shadow-xl text-gray-500">
         <figure><img  src={picture} alt="Album"/></figure>
@@ -15,7 +18,15 @@ const AllPhonesDetails = ({allPhone}) => {
           <p>posted_time: {posted_time}</p>
           <p>Sellers_Name: {sellers_name}</p>
           <div className="card-actions justify-end">
-            <button className="btn btn-primary  text-white bg-red-600 hover:bg-red-700">Order Now</button>
+          <label 
+                 htmlFor={`order-modal-${_id}`} type="button"
+                 className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-red-600 dark:text-white"
+               
+                 >Book Now</label>
+                 <OrderModal
+                 categories ={allPhone}
+                 ></OrderModal>
+         
           </div>
         </div>
       </div>

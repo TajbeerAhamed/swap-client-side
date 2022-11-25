@@ -6,7 +6,12 @@ import Error from './components/Error/Error';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import Signup from './components/Signup/Signup';
+import SinglePhone from './components/SinglePhone/SinglePhone';
+import Spinner from './components/Spinner/Spinner';
 import Main from './layout/Main';
+import { Toaster } from 'react-hot-toast';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+
 
 function App() {
   const router = createBrowserRouter([
@@ -35,7 +40,13 @@ function App() {
         {
           path:'/allPhones',
           element:<AllPhones></AllPhones>,
-          loader: () => fetch('http://localhost:5000/allPhones')
+         
+        },
+        {
+          path: "/category/:id",
+          loader: ({ params }) =>
+            fetch(`http://localhost:5000/category/${params.id}`),
+          element: <PrivateRoute><SinglePhone></SinglePhone></PrivateRoute>,
         },
       ]
     },
@@ -47,7 +58,8 @@ function App() {
   ])
   return (
     <div>
-    <RouterProvider router={router}></RouterProvider>
+   <RouterProvider fallbackElement={<Spinner></Spinner>} router={router}></RouterProvider>
+ <Toaster></Toaster>
     </div>
   );
 }
