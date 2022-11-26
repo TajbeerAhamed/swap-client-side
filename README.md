@@ -2,10 +2,10 @@
 
 ## Overivew: Welcome to my website on creating a  Mobile Phone resell Website.
 
-### Links : 
-- Live Site Link:
-- Client side Github Repo:
-- Server side Github Repo:
+## Links : 
+### Live Site Link:
+### Client side Github Repo: https://github.com/programming-hero-web-course-4/b612-used-products-resale-clients-side-TajbeerAhamed
+### Server side Github Repo: https://github.com/programming-hero-web-course-4/b612-used-products-resale-server-side-TajbeerAhamed
 
 ### Features: Users should be able to:
 
