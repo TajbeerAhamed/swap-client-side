@@ -17,12 +17,9 @@ const OrderModal = ({ categories}) => {
         event.preventDefault ();
         const form = event.target;
         const name = form.name.value;
-        const model = form.model.value;
-        const price = form.price.value;
-        const email = form.email.value;
         const phone = form.phone.value;
-        const meeting = form.meeting.value;
-        const formValue = {name ,email, meeting ,phone,model,price};
+        const location = form.location.value;
+        const formValue = {name ,email:user.email, location,phone,model,price:user};
         console.log(location);
         if (user?.uid) {
             fetch("http://localhost:5000/items", {
@@ -54,8 +51,8 @@ const OrderModal = ({ categories}) => {
                         <label htmlFor={`order-modal-${_id}`} className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
                         <h3 className="text-lg ml-2 font-bold">Brand - {brand}</h3>
                         <form onSubmit={handleBooking} className='grid grid-cols-1  gap-3 mt-10'>
-                            <input type="model" name='model' disabled value={model} className="input w-full input-bordered" />
-                            <input type="price" name='price' disabled value={resale_price} className="input w-full input-bordered" />
+                            <input type="model"  disabled value={model} className="input w-full input-bordered" />
+                            <input type="price"  disabled value={resale_price} className="input w-full input-bordered" />
                             <input name='name' type="name" defaultValue={user?.displayName} disabled placeholder="Your Name" className="input w-full input-bordered" />
                             <input name='email' type="email" defaultValue={user?.email} disabled placeholder="Your Email" className="input w-full input-bordered" />
                             <input name='phone' type="phone" placeholder="Your Phone Number" className="input w-full input-bordered" />
@@ -63,7 +60,8 @@ const OrderModal = ({ categories}) => {
                             <br />
                            
                             <div>
-                                    <input type="submit" value="submit" />
+                                    <button  className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-red-600 dark:text-white"
+                type="submit" value="" >Submit </button>
                                 </div>
                         </form>
 
