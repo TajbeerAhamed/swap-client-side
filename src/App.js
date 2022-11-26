@@ -11,6 +11,7 @@ import Spinner from './components/Spinner/Spinner';
 import Main from './layout/Main';
 import { Toaster } from 'react-hot-toast';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import Dashboard from './components/Dashboard/Dashboard';
 
 
 function App() {
@@ -40,6 +41,11 @@ function App() {
         {
           path:'/allPhones',
           element:<AllPhones></AllPhones>,
+         
+        },
+        {
+          path:'/dashboard',
+          element:<Dashboard></Dashboard>,
          
         },
         {

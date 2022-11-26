@@ -103,9 +103,9 @@ const Header = () => {
                     Log Out
                   </button>
                   <li>
-                  {/* <Link className="text-white" to="/addService">
-                    Add Service
-                  </Link> */}
+                  <Link className="font-medium tracking-wide text-red-600 transition-colors duration-200 hover:text-teal-accent-400" to="/dashboard">
+                    Dashboard
+                  </Link>
                 </li>
                 <li>
                   {/* <Link className="text-white" to="/reviews">

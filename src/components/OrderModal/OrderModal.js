@@ -17,10 +17,12 @@ const OrderModal = ({ categories}) => {
         event.preventDefault ();
         const form = event.target;
         const name = form.name.value;
+        const model = form.model.value;
+        const price = form.price.value;
         const email = form.email.value;
         const phone = form.phone.value;
         const meeting = form.meeting.value;
-        const formValue = {name ,email, meeting ,phone};
+        const formValue = {name ,email, meeting ,phone,model,price};
         console.log(location);
         if (user?.uid) {
             fetch("http://localhost:5000/items", {
@@ -52,8 +54,8 @@ const OrderModal = ({ categories}) => {
                         <label htmlFor={`order-modal-${_id}`} className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
                         <h3 className="text-lg ml-2 font-bold">Brand - {brand}</h3>
                         <form onSubmit={handleBooking} className='grid grid-cols-1  gap-3 mt-10'>
-                            <input type="text" disabled value={model} className="input w-full input-bordered" />
-                            <input type="text" disabled value={resale_price} className="input w-full input-bordered" />
+                            <input type="model" name='model' disabled value={model} className="input w-full input-bordered" />
+                            <input type="price" name='price' disabled value={resale_price} className="input w-full input-bordered" />
                             <input name='name' type="name" defaultValue={user?.displayName} disabled placeholder="Your Name" className="input w-full input-bordered" />
                             <input name='email' type="email" defaultValue={user?.email} disabled placeholder="Your Email" className="input w-full input-bordered" />
                             <input name='phone' type="phone" placeholder="Your Phone Number" className="input w-full input-bordered" />
@@ -61,7 +63,7 @@ const OrderModal = ({ categories}) => {
                             <br />
                            
                             <div>
-                                    <button type="submit" className="w-full px-8 py-3 font-semibold rounded-md btn btn-primary dark:text-gray-900">Submit</button>
+                                    <input type="submit" value="submit" />
                                 </div>
                         </form>
 

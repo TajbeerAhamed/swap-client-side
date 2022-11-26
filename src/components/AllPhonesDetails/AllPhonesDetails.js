@@ -1,4 +1,4 @@
-import OrderModal from "../OrderModal/OrderModal";
+import OrderModal from "../../contexts/AuthProvider/AuthProvider";
 
 
 const AllPhonesDetails = ({allPhone}) => {
