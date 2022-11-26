@@ -12,7 +12,7 @@ const Header = () => {
   };
   return (
     <header>
-      <div class="bg-red-300 text-red-600">
+      <div class="bg-red-600 text-black">
         <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
           <div class="relative flex items-center justify-between">
             <a
@@ -45,7 +45,7 @@ const Header = () => {
                 />
               </div>
 
-              <span class="ml-2 text-2xl font-bold tracking-wide text-red-600 uppercase">
+              <span class="ml-2 text-2xl font-bold tracking-wide text-black uppercase">
                SWAP
               </span>
             </a>
@@ -59,7 +59,7 @@ const Header = () => {
                  
                   aria-label="Our product"
                   title="Our product"
-                  class="font-medium tracking-wide text-red-600 transition-colors duration-200 hover:text-teal-accent-400"
+                  class="font-bold tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
                 >
                   Home
                 </Link>
@@ -70,7 +70,7 @@ const Header = () => {
                  
                   aria-label="Our product"
                   title="Our product"
-                  class="font-medium tracking-wide text-red-600 transition-colors duration-200 hover:text-teal-accent-400"
+                  class="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
                 >
                  All Products
                 </Link>
@@ -81,7 +81,7 @@ const Header = () => {
                 
                   aria-label="Product pricing"
                   title="Product pricing"
-                  class="font-medium tracking-wide text-red-600 transition-colors duration-200 hover:text-teal-accent-400"
+                  class="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
                 >
                   Blog
                 </Link>
@@ -98,12 +98,12 @@ const Header = () => {
                   </span>
                   <button
                     onClick={handleLogout}
-                    class="font-medium tracking-wide text-red-600 transition-colors duration-200 hover:text-teal-400"
+                    class="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-400"
                   >
                     Log Out
                   </button>
                   <li>
-                  <Link className="font-medium tracking-wide text-red-600 transition-colors duration-200 hover:text-teal-accent-400" to="/dashboard">
+                  <Link className="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400" to="/dashboard">
                     Dashboard
                   </Link>
                 </li>
@@ -117,13 +117,13 @@ const Header = () => {
                 <>
                 <li><Link
                     to="/login"
-                    className="text-red-600 btn btn-ghost normal-case text-xl"
+                    className="text-black btn btn-ghost normal-case text-xl"
                   >
                     Login
                   </Link></li>  
                 <li><Link
                     to="/signup"
-                    className="text-red-600 btn btn-ghost normal-case text-xl"
+                    className="text-black btn btn-ghost normal-case text-xl"
                   >
                    SignUp
                   </Link></li>  
@@ -179,7 +179,15 @@ const Header = () => {
                             <rect x="14" y="1" width="7" height="6" />
                             <rect x="14" y="11" width="7" height="12" />
                           </svg>
-                          <span class="ml-2 text-xl font-bold tracking-wide text-red-600 uppercase">
+                          <div className="w-12">
+                {" "}
+                <img
+                  className="rounded-full object-cover"
+                  src="logo.jpg"
+                  alt=""
+                />
+              </div>
+                          <span class="ml-2 text-xl font-bold tracking-wide text-black uppercase">
                            SWAP
                           </span>
                         </a>
@@ -208,7 +216,7 @@ const Header = () => {
                             href="/"
                             aria-label="Our product"
                             title="Our product"
-                            class="font-medium tracking-wide text-red-600 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            class="font-medium tracking-wide text-black transition-colors duration-200 hover:text-deep-purple-accent-400"
                           >
                             Home
                           </Link>
@@ -219,7 +227,7 @@ const Header = () => {
                             href="/"
                             aria-label="Our product"
                             title="Our product"
-                            class="font-medium tracking-wide text-red-600 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            class="font-medium tracking-wide text-black transition-colors duration-200 hover:text-deep-purple-accent-400"
                           >
                             AllProducts
                           </Link>
@@ -230,7 +238,7 @@ const Header = () => {
                             href="/"
                             aria-label="Product pricing"
                             title="Product pricing"
-                            class="font-medium tracking-wide text-red-600 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            class="font-medium tracking-wide text-black transition-colors duration-200 hover:text-deep-purple-accent-400"
                           >
                             Blog
                           </Link>
@@ -269,7 +277,7 @@ const Header = () => {
                               </span>
                               <button
                                 onClick={handleLogout}
-                                className="btn btn-ghost normal-case text-xl"
+                                className="text-red-600 btn btn-ghost normal-case text-xl"
                               >
                                 Log Out
                               </button>
