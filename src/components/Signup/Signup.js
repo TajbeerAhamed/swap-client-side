@@ -6,7 +6,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 
 const Signup = () => {
-  const { signIn } = useContext(AuthContext);
+  const { creatUser } = useContext(AuthContext);
   const navigate = useNavigate();
 
 
@@ -15,14 +15,16 @@ const Signup = () => {
     const form = event.target;
     const email = form.email.value;
     const password = form.password.value;
+    const dropdown = form.dropdown.value;
     const confirmedPassword = form.confirmedPassword.value;
-    console.log(email, password);
-    signIn(email, password,confirmedPassword)
+    console.log(email, password,dropdown);
+    creatUser(email, password,confirmedPassword)
       .then((result) => {
         const user = result.user;
+        saveUser(email,dropdown)
         console.log(user);
         form.reset();
-        navigate("/");
+      
       })
       .catch((error) => console.error(error));
   };
@@ -40,6 +42,25 @@ const Signup = () => {
       .catch((error) => console.error(error));
   };
 
+  const saveUser =(name, email ,role)=>{
+    const usersSaved  ={name ,email,role};
+    console.log(usersSaved);
+    fetch("http://localhost:5000/usersList", {
+        method: "POST",
+        headers: {
+            "content-type": "application/json",
+        },
+        body: JSON.stringify(usersSaved),
+    })
+        .then((res) => res.json())
+        .then((data) => {
+            console.log(data);
+        
+        })
+        .catch((err) => console.log(err));
+
+}
+
   return (
     <div>
       <div className="w-full mx-auto max-w-md p-4 rounded-md shadow sm:p-8 bg-white-400 text-gray-700">
@@ -56,6 +77,7 @@ const Signup = () => {
             Sign up here
           </Link>
         </p>
+        
         <div className="my-6 space-y-4">
           <button
             onClick={handleGoogleSignIn}
@@ -78,6 +100,7 @@ const Signup = () => {
           <p className="px-3 text-red-400">OR</p>
           <hr className="w-full text-red-400" />
         </div>
+       
 
         <form
           onSubmit={handleSubmit}
@@ -85,6 +108,12 @@ const Signup = () => {
           action=""
           className="space-y-8 ng-untouched ng-pristine ng-valid"
         >
+          
+           <select type="dropdown" name="dropdown" id="dropdown" className="select text-white bg-red-500  select-bordered w-full">
+                    <option disabled selected>Select User</option>
+                    <option>Buyer</option>
+                    <option>Seller</option>
+                </select>
           <div className="space-y-4">
             <div className="space-y-2">
               <label for="email" className="block text-sm text-red-600">
@@ -121,6 +150,7 @@ const Signup = () => {
                 required
               />
             </div>
+            
             <div className="space-y-2">
               <div className="flex justify-between">
                 <label for="confirmedPassword" className="text-sm">
@@ -144,6 +174,7 @@ const Signup = () => {
               />
             </div>
           </div>
+         
           <button
             type="submit"
             className="w-full px-8 py-3 font-semibold rounded-md bg-red-500 text-white hover:bg-red-600 hover:text-white"

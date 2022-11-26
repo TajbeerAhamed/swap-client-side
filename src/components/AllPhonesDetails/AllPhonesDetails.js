@@ -20,7 +20,7 @@ const AllPhonesDetails = ({allPhone}) => {
           <div className="card-actions justify-end">
           <label 
                  htmlFor={`order-modal-${_id}`} type="button"
-                 className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-red-600 dark:text-white"
+                 className="flex items-center justify-center w-full  p-3 font-semibold tracking-wide rounded-md bg-red-600 dark:text-white"
                
                  >Book Now</label>
                  <OrderModal

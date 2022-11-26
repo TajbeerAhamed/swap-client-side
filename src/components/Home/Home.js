@@ -30,8 +30,8 @@ const Home = () => {
 }
 <Link to='/allPhones'>
                     <button
-                        className="py-4 px-6  m-8 font-poppins text-xl text-black  font-medium rounded-lg bg-gradient-to-rounded-md bg-red-600
-                       hover:bg-red-400	 hover:text-white"
+                        className="py-4   m-8 font-poppins text-xl text-white  font-medium rounded-lg bg-gradient-to-rounded-md bg-red-600
+                       hover:bg-red-400	 mt-10 px-10 flex justify-center w-3/5"
                         onClick={handleAllCategory}
                     >
                         See All Products

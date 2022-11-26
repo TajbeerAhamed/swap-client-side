@@ -8,7 +8,7 @@ const SinglePhoneInfo = ({single}) => {
            <div className="card lg:card-side bg-base-100 shadow-xl">
   <figure><img src={picture} alt="Album"/></figure>
   <div className="card-body">
-    <h2 className="card-title">{brand}</h2>
+    <h2 className="card-title">Brand: {brand}</h2>
     <h2 className="card-title">Name:{model}</h2>
     <p>Location: {location}</p>
     <p>Original Price: {original_price}</p>
