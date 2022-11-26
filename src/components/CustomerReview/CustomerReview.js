@@ -41,35 +41,35 @@ const CustomerReview = () => {
 			<div className="flex items-center space-x-1">
 				<span className="flex-shrink-0 w-12 text-sm">5 star</span>
 				<div className="flex-1 h-4 overflow-hidden rounded-sm bg-gray-700">
-					<div className="bg-orange-300 h-4 w-5/6"></div>
+					<div className="bg-orange-500 h-4 w-5/6"></div>
 				</div>
 				<span className="flex-shrink-0 w-12 text-sm text-right">83%</span>
 			</div>
 			<div className="flex items-center space-x-1">
 				<span className="flex-shrink-0 w-12 text-sm">4 star</span>
 				<div className="flex-1 h-4 overflow-hidden rounded-sm bg-gray-700">
-					<div className="bg-orange-300 h-4 w-4/6"></div>
+					<div className="bg-orange-500 h-4 w-4/6"></div>
 				</div>
 				<span className="flex-shrink-0 w-12 text-sm text-right">67%</span>
 			</div>
 			<div className="flex items-center space-x-1">
 				<span className="flex-shrink-0 w-12 text-sm">3 star</span>
 				<div className="flex-1 h-4 overflow-hidden rounded-sm bg-gray-700">
-					<div className="bg-orange-300 h-4 w-3/6"></div>
+					<div className="bg-orange-500 h-4 w-3/6"></div>
 				</div>
 				<span className="flex-shrink-0 w-12 text-sm text-right">50%</span>
 			</div>
 			<div className="flex items-center space-x-1">
 				<span className="flex-shrink-0 w-12 text-sm">2 star</span>
 				<div className="flex-1 h-4 overflow-hidden rounded-sm bg-gray-700">
-					<div className="bg-orange-300 h-4 w-2/6"></div>
+					<div className="bg-orange-500 h-4 w-2/6"></div>
 				</div>
 				<span className="flex-shrink-0 w-12 text-sm text-right">33%</span>
 			</div>
 			<div className="flex items-center space-x-1">
 				<span className="flex-shrink-0 w-12 text-sm">1 star</span>
 				<div className="flex-1 h-4 overflow-hidden rounded-sm bg-gray-700">
-					<div className="bg-orange-300 h-4 w-1/6"></div>
+					<div className="bg-orange-500 h-4 w-1/6"></div>
 				</div>
 				<span className="flex-shrink-0 w-12 text-sm text-right">17%</span>
 			</div>

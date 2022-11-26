@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -44,37 +45,30 @@ const Footer = () => {
               </p>
               <ul className="mt-2 space-y-2">
                 <li>
-                  <a
-                    href="/"
+                  <Link
+                    
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
-                    Iphone
-                  </a>
+                  Apple
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/"
+                  <Link 
+                   
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
                    OnePlus
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/"
+                  <Link
+                   
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
                    Samsung
-                  </a>
+                  </Link>
                 </li>
-                <li>
-                  <a
-                    href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
-                  >
-                    Vivo
-                  </a>
-                </li>
+               
               </ul>
             </div>
             <div>
@@ -83,44 +77,24 @@ const Footer = () => {
               </p>
               <ul className="mt-2 space-y-2">
                 <li>
-                  <a
-                    href="/"
+                  <Link
+                   to={'/'}
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
-                    Web
-                  </a>
+                   Web
+                  </Link>
                 </li>
+                
+               
+               
                 <li>
-                  <a
-                    href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
-                  >
-                    eCommerce
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
-                  >
-                    Business
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
-                  >
-                    Entertainment
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/"
+                  <Link to='/blog'
+        
+                  
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
                    Blog
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

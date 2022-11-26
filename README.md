@@ -1,8 +1,36 @@
-# Getting Started with Create React App
+# Website Name: SWAP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overivew: Welcome to my website on creating a  Mobile Phone resell Website.
 
-## Available Scripts
+### Links : 
+- Live Site Link:
+- Client side Github Repo:
+- Server side Github Repo:
+
+### Features: Users should be able to:
+
+- See a Beautiful home page
+- Log in using google account
+- Create account with Email and password
+- Browser through different pages with great user experience
+- Add Item to the database
+
+
+### Built With: 
+- react, react-dom
+- react-router
+- firebase
+- react-firebase-hooks
+- tailwindCSS
+- kitWind UI
+- node
+- mongoDB
+- cors
+- express
+
+
+
+
 
 In the project directory, you can run:
 

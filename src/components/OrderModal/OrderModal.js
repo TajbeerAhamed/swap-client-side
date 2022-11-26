@@ -19,7 +19,7 @@ const OrderModal = ({ categories}) => {
         const name = form.name.value;
         const phone = form.phone.value;
         const location = form.location.value;
-        const formValue = {name ,email:user.email, location,phone,model,price:user};
+        const formValue = {name ,email:user.email, location,phone,model,price:user.price};
         console.log(location);
         if (user?.uid) {
             fetch("http://localhost:5000/items", {
@@ -33,7 +33,7 @@ const OrderModal = ({ categories}) => {
                 .then((data) => {
                     console.log(data);
                     if (data.acknowledged) {
-                        toast.success("Items Added Successfully");
+                        toast.success("Item is Booked");
                       
                     }
                 })
