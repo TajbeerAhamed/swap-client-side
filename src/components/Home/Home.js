@@ -28,16 +28,17 @@ const Home = () => {
     phone={phone}
     ></HomePhones>)
 }
-<Link to='/allPhones'>
+</div>
+<Link  className='flex items-center justify-center' to='/allPhones'>
                     <button
                         className="py-4   m-8 font-poppins text-xl text-white  font-medium rounded-lg bg-gradient-to-rounded-md bg-red-600
-                       hover:bg-red-400	 mt-10 px-10 flex justify-center w-3/5"
+                       hover:bg-red-400	 mt-10  flex justify-center items-center px-10"
                         onClick={handleAllCategory}
                     >
                         See All Products
                     </button>
                 </Link>
-</div>
+
 <HomeImages></HomeImages>
 <CustomerReview></CustomerReview>
 <Discount></Discount>

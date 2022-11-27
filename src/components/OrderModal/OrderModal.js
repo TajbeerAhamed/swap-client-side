@@ -9,7 +9,7 @@ const OrderModal = ({ categories}) => {
     const [items ,setitems]= useState([]);
 
    useEffect(()=>{
-        fetch('http://localhost:5000/items')
+        fetch('https://swap-server-site.vercel.app/items')
         .then(res=>res.json())
         .then(data=>setitems(data))
     },[items])
@@ -23,7 +23,7 @@ const OrderModal = ({ categories}) => {
         const formValue = {name ,email:user.email, location,phone,model,price};
         // console.log(location);
         if (user?.uid) {
-            fetch("http://localhost:5000/items", {
+            fetch("https://swap-server-site.vercel.app/items", {
                 method: "POST",
                 headers: {
                     "content-type": "application/json",

@@ -281,6 +281,11 @@ const Header = () => {
                               >
                                 Log Out
                               </button>
+                              <li>
+                  <Link className="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400" to="/dashboard">
+                    Dashboard
+                  </Link>
+                </li>
                             </>
                           ) : (
                             <>

@@ -11,10 +11,10 @@ import Spinner from "./components/Spinner/Spinner";
 import Main from "./layout/Main";
 import { Toaster } from "react-hot-toast";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
-import Dashboard from "./components/Dashboard/Dashboard";
 import DashboardLayout from "./components/DashboardLayout/DashboardLayout";
 import MyOrder from "./components/MyOrder/MyOrder";
 import AllUser from "./components/AllUser/AllUser";
+import AdminRoute from "./components/PrivateRoute/AdminRoute/AdminRoute";
 
 function App() {
   const router = createBrowserRouter([
@@ -25,7 +25,7 @@ function App() {
         {
           path: "/",
           element: <Home></Home>,
-          loader: () => fetch("http://localhost:5000/phones"),
+          loader: () => fetch("https://swap-server-site.vercel.app/phones"),
         },
         {
           path: "/blog",
@@ -51,7 +51,7 @@ function App() {
         {
           path: "/category/:id",
           loader: ({ params }) =>
-            fetch(`http://localhost:5000/category/${params.id}`),
+            fetch(`https://swap-server-site.vercel.app/category/${params.id}`),
           element: (
             <PrivateRoute>
               <SinglePhone></SinglePhone>
@@ -75,7 +75,11 @@ function App() {
         },
         {
           path: "/dashboard/allusers",
-          element: <AllUser></AllUser>,
+          element: (
+            <AdminRoute>
+              <AllUser></AllUser>
+            </AdminRoute>
+          ),
         },
       ],
     },
