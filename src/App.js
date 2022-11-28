@@ -16,6 +16,7 @@ import MyOrder from "./components/MyOrder/MyOrder";
 import AllUser from "./components/AllUser/AllUser";
 import AdminRoute from "./components/PrivateRoute/AdminRoute/AdminRoute";
 import AddAProduct from "./components/AddAProduct/AddAproduct";
+import MyProducts from "./components/MyProduct";
 
 function App() {
   const router = createBrowserRouter([
@@ -82,6 +83,14 @@ function App() {
             </AdminRoute>
           ),
         },
+       {
+        path:'/dashboard/myproduct',
+        element:<AdminRoute><MyProducts></MyProducts></AdminRoute>
+       },
+      {
+        path:'/dashboard/myproduct',
+        element:<MyProducts></MyProducts>
+      },
         {
           path : '/dashboard/addproducts',
           element: <AdminRoute><AddAProduct></AddAProduct></AdminRoute>

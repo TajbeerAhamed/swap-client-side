@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useLoaderData, useNavigate } from 'react-router-dom';
+import AdvertiseItems from '../AdvertiseItems/AdvertiseItems';
 import CustomerReview from '../CustomerReview/CustomerReview';
 import Discount from '../Discount/Discount';
 import HomeBanner from '../HomeBanner/HomeBanner';
@@ -40,6 +41,7 @@ const Home = () => {
                 </Link>
 
 <HomeImages></HomeImages>
+<AdvertiseItems></AdvertiseItems>
 <CustomerReview></CustomerReview>
 <Discount></Discount>
         </div>
